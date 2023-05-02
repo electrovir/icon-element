@@ -1,8 +1,14 @@
 {
     "name": "@electrovir/icon-element",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "reusable element for displaying SVG icons",
-    "keywords": [],
+    "keywords": [
+        "element-vir",
+        "element",
+        "html",
+        "icon",
+        "svg"
+    ],
     "homepage": "https://github.com/electrovir/icon-element",
     "bugs": {
         "url": "https://github.com/electrovir/icon-element/issues"

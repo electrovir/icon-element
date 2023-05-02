@@ -2,8 +2,7 @@ import {typedAssertInstanceOf} from '@augment-vir/browser-testing';
 import {assert, fixture as renderFixture} from '@open-wc/testing';
 import {assign, html} from 'element-vir';
 import {setCssVarValue} from 'lit-css-vars';
-import {virIconColorCssVars} from './icon-color-css-vars';
-import {VirIcon} from './vir-icon.element';
+import {VirIcon, virIconColorCssVars} from './';
 import {Code24Icon} from './web-test.test-helper';
 
 describe(VirIcon.tagName, () => {
