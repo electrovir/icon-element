@@ -1,4 +1,5 @@
 import {css, defineElement, unsafeHTML} from 'element-vir';
+import {virIconColorCssVars} from './icon-color-css-vars';
 import {IconSvg} from './icon-svg';
 
 export const VirIcon = defineElement<{
@@ -14,6 +15,9 @@ export const VirIcon = defineElement<{
     styles: ({hostClassSelectors}) => css`
         :host {
             display: block;
+            color: ${virIconColorCssVars['vir-icon-color'].value};
+            fill: ${virIconColorCssVars['vir-icon-fill-color'].value};
+            stroke: ${virIconColorCssVars['vir-icon-stroke-color'].value};
         }
 
         svg {

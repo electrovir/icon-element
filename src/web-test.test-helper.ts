@@ -3,15 +3,14 @@ import {virIconColorCssVars} from './icon-color-css-vars';
 import {defineIconSvg} from './icon-svg';
 import {VirIcon} from './vir-icon.element';
 
-const Arrows24Icon = defineIconSvg({
-    name: 'Arrows24Icon',
+export const Code24Icon = defineIconSvg({
+    name: 'Code24Icon',
     svgTemplate: html`
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xml:space="preserve"
             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
             viewBox="0 0 24 24"
-            stroke=${virIconColorCssVars['vir-icon-stroke-color'].value}
             stroke-width="2px"
             fill="none"
             width="24"
@@ -50,24 +49,22 @@ export const WebTestApp = defineElementNoInputs({
     renderCallback() {
         return html`
             black
-            <${VirIcon} ${assign(VirIcon, {icon: Arrows24Icon})}></${VirIcon}>
+            <${VirIcon} ${assign(VirIcon, {icon: Code24Icon})}></${VirIcon}>
             <div class="colored">
                 red
-                <${VirIcon} ${assign(VirIcon, {icon: Arrows24Icon})}></${VirIcon}>
+                <${VirIcon} ${assign(VirIcon, {icon: Code24Icon})}></${VirIcon}>
             </div>
             <div class="colored-var">
                 green
-                <${VirIcon} ${assign(VirIcon, {icon: Arrows24Icon})}></${VirIcon}>
+                <${VirIcon} ${assign(VirIcon, {icon: Code24Icon})}></${VirIcon}>
             </div>
             <div class="colored-stroke-var">
                 blue
-                <${VirIcon} ${assign(VirIcon, {icon: Arrows24Icon})}></${VirIcon}>
+                <${VirIcon} ${assign(VirIcon, {icon: Code24Icon})}></${VirIcon}>
             </div>
             <div class="big-size">
                 resized
-                <${VirIcon}
-                    ${assign(VirIcon, {icon: Arrows24Icon, fitContainer: true})}
-                ></${VirIcon}>
+                <${VirIcon} ${assign(VirIcon, {icon: Code24Icon, fitContainer: true})}></${VirIcon}>
             </div>
         `;
     },

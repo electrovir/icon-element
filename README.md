@@ -41,7 +41,7 @@ export const MyIcon = defineIconSvg({
 });
 ```
 
-## Usage a defined icon
+## Using a defined icon
 
 Then pass that defined icon to an instance of `VirIcon`:
 
