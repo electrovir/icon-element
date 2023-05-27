@@ -12,7 +12,7 @@ export const VirIcon = defineElement<{
         /** Ignores the given icon's embedded size and causes the <svg> element to fill its parent. */
         'vir-icon-fit-icon': ({inputs}) => !!inputs.fitContainer,
     },
-    styles: ({hostClassSelectors}) => css`
+    styles: ({hostClasses}) => css`
         :host {
             display: block;
             color: ${virIconColorCssVars['vir-icon-color'].value};
@@ -28,7 +28,7 @@ export const VirIcon = defineElement<{
             display: block;
         }
 
-        ${hostClassSelectors['vir-icon-fit-icon']} svg {
+        ${hostClasses['vir-icon-fit-icon'].name} svg {
             height: 100%;
             width: 100%;
         }
